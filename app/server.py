@@ -9,10 +9,11 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.dropbox.com/s/6bgq8t6yextloqp/export.pkl?raw=1'
-export_file_name = 'export.pkl'
+export_file_url = 'https://drive.google.com/open?id=1-KKH1BbpIS0-zkQ4LOtSePBFey3UWthT'
+export_file_name = 'car_final_resnet50.pth'
 
-classes = ['black', 'grizzly', 'teddys']
+classes = ['acura_cl_1997', 'acura_cl_1998', 'acura_cl_1999', 'acura_cl_2001', 'acura_cl_2002', 'acura_cl_2003', 'acura_el_1997', 'acura_el_2001', 'acura_el_2003', 'acura_ilx_2013', 'acura_ilx_2014', 'acura_integra_1900', 'acura_integra_1986', 'acura_integra_1987', 'acura_integra_1988', 'acura_integra_1989', 'acura_integra_1990', 'acura_integra_1991', 'acura_integra_1992', 'acura_integra_1993', 'acura_integra_1994', 'acura_integra_1995', 'acura_integra_1996', 'acura_integra_1997', 'acura_integra_1998', 'acura_integra_1999', 'acura_integra_2000', 'acura_integra_2001', 'acura_kang_2007', 'acura_legend_1987', 'acura_legend_1988', 'acura_legend_1989', 'acura_legend_1990', 'acura_legend_1991', 'acura_legend_1992', 'acura_legend_1993', 'acura_legend_1994', 'acura_legend_1995', 'acura_legend_1996', 'acura_legend_2001', 'acura_legend_2002', 'acura_mdx_1900', 'acura_mdx_1996', 'acura_mdx_2001', 'acura_mdx_2002', 'acura_mdx_2003', 'acura_mdx_2004', 'acura_mdx_2005', 'acura_mdx_2006', 'acura_mdx_2007', 'acura_mdx_2008', 'acura_mdx_2009', 'acura_mdx_2010', 'acura_mdx_2011', 'acura_mdx_2012', 'acura_mdx_2014', 'acura_mdx_2016', 'acura_nsx_2002', 'acura_rdx_2007', 'acura_rdx_2008', 'acura_rdx_2009', 'acura_rdx_2010', 'acura_rdx_2011', 'acura_rdx_2012', 'acura_rdx_2013', 'acura_rdx_2014', 'audi_a4_1998']
+
 path = Path(__file__).parent
 
 app = Starlette()
